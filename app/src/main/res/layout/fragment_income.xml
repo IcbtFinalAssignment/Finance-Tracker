@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/grey_90"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/grey_90"
+        android:layout_height="@dimen/_180sdp">
+
+        <TextView
+            android:id="@+id/txtMonthName"
+            android:layout_width="wrap_content"
+            style="@style/myTextviewBold"
+            android:text="January"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:letterSpacing="0.1"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="@dimen/_50sdp">
+
+            <ImageView
+                android:id="@+id/ivPrevious"
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <TextView
+                android:id="@+id/txtTotalIncome"
+                android:layout_width="@dimen/_160sdp"
+                style="@style/myTextviewBold"
+                android:text="0$"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:textColor="@color/amountColor"
+                android:textSize="@dimen/_30sdp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/ivNext"
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_next"
+                android:tint="@color/white"
+                android:layout_height="@dimen/_20sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/bg_hlaf_income_tran"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                style="@style/myTextviewBold"
+                android:text="Income Transaction"
+                android:textSize="18sp"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtNoFound"
+                style="@style/myTextviewBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="No Transaction found"
+                android:textColor="@color/unselText"
+                android:textSize="16sp" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshIncone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtTitle">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvIncomelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

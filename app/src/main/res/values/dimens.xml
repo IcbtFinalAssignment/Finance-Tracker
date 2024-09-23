@@ -1,0 +1,33 @@
+<resources>
+
+    <!--general spacing-->
+    <dimen name="_3sdp">3dp</dimen>
+    <dimen name="_5sdp">5dp</dimen>
+    <dimen name="_9sdp">9dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="_11sdp">11dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <!--    dimens-->
+    <dimen name="_50sdp">50dp</dimen>
+    <dimen name="_16sdp">16dp</dimen>
+    <dimen name="_15sdp">15dp</dimen>
+    <dimen name="_40sdp">40dp</dimen>
+    <dimen name="_45sdp">45dp</dimen>
+    <dimen name="_65sdp">65dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+
+    <dimen name="_180sdp">180dp</dimen>
+    <dimen name="_160sdp">160dp</dimen>
+    <dimen name="_30sdp">30dp</dimen>
+    <dimen name="_25sdp">25dp</dimen>
+
+    <dimen name="_80sdp">80dp</dimen>
+    <dimen name="_35sdp">35dp</dimen>
+
+    <dimen name="_70sdp">70dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>
